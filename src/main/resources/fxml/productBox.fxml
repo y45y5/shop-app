@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="130.0" maxWidth="300.0" onMouseClicked="#onProductClickAction" prefHeight="130.0" prefWidth="320.0" styleClass="imageHome" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.shop_app.controller.ProductBoxController">
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="110.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label styleClass="smallText" text="product title" GridPane.columnIndex="1" />
+      <Label text="Popular, Promotion" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <styleClass>
+            <String fx:value="titleHome" />
+            <String fx:value="smallText" />
+         </styleClass>
+      </Label>
+      <Label text="99.99 $" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowSpan="3">
+         <image>
+            <Image url="@../img/example/noImg.png" />
+         </image>
+      </ImageView>
+      <Label style="-fx-opacity: 0;" text="productId" GridPane.rowIndex="2" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</GridPane>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.shop_app.controller.StartingPageController">
+   <children>
+      <GridPane prefHeight="600.0" prefWidth="256.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" GridPane.rowIndex="5">
+               <children>
+                  <Label fx:id="loginError" styleClass="errorText" />
+               </children>
+            </VBox>
+            <TextField fx:id="usernameLogin" maxWidth="210.0" prefHeight="30.0" promptText="Username" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <Label text="Login" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="whiteText" />
+                  <String fx:value="boldText" />
+                  <String fx:value="mediumText" />
+               </styleClass>
+            </Label>
+            <Label text="Welcome in Shop" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="whiteText" />
+                  <String fx:value="bigText" />
+               </styleClass>
+            </Label>
+            <PasswordField fx:id="passwordLogin" maxWidth="210.0" prefHeight="30.0" promptText="Password" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </PasswordField>
+            <Button fx:id="loginButton" maxWidth="105.0" mnemonicParsing="false" onAction="#onLoginAction" prefHeight="30.0" styleClass="violetButton" text="Login" GridPane.rowIndex="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="blackBackground" />
+            <String fx:value="whiteText" />
+         </styleClass>
+      </GridPane>
+      <Circle layoutX="256.0" layoutY="117.0" radius="18.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c235c0" />
+                  <Stop color="#d23084" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Label layoutX="248.0" layoutY="106.0" text="or">
+         <styleClass>
+            <String fx:value="whiteText" />
+            <String fx:value="boldText" />
+         </styleClass>
+      </Label>
+      <GridPane layoutX="256.0" prefHeight="600.0" prefWidth="768.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="234.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="234.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="23.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="23.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="23.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="20.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="23.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="23.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="passwordError" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="errorText" />
+                  <String fx:value="smallText" />
+               </styleClass>
+            </Label>
+            <Label fx:id="usernameError" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="errorText" />
+                  <String fx:value="smallText" />
+               </styleClass></Label>
+            <Label fx:id="emailError" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="errorText" />
+                  <String fx:value="smallText" />
+               </styleClass></Label>
+            <Label fx:id="nameError" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="10">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="errorText" />
+                  <String fx:value="smallText" />
+               </styleClass></Label>
+            <Label fx:id="countryCityError" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="12">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="errorText" />
+                  <String fx:value="smallText" />
+               </styleClass></Label>
+            <Label fx:id="streetError" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="14">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="errorText" />
+                  <String fx:value="smallText" />
+               </styleClass></Label>
+            <Label fx:id="zipcodeError" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="errorText" />
+                  <String fx:value="smallText" />
+               </styleClass></Label>
+            <Label text="Register" GridPane.rowIndex="3" GridPane.rowSpan="2">
+               <styleClass>
+                  <String fx:value="mediumText" />
+                  <String fx:value="boldText" />
+                  <String fx:value="blackText" />
+               </styleClass>
+            </Label>
+            <TextField fx:id="usernameRegister" maxWidth="456.0" prefHeight="30.0" promptText="Username" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <PasswordField fx:id="passwordRegister" maxWidth="220.0" prefHeight="30.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </PasswordField>
+            <PasswordField fx:id="confirmPasswordRegister" maxWidth="220.0" prefHeight="30.0" promptText="Confirm Password" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </PasswordField>
+            <TextField fx:id="emailRegister" maxWidth="456.0" prefHeight="30.0" promptText="Email Address" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="firstNameRegister" maxWidth="220.0" prefHeight="30.0" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="lastNameRegister" maxWidth="220.0" prefHeight="30.0" promptText="Last Name" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="countryRegister" maxWidth="220.0" prefHeight="30.0" promptText="Country" GridPane.columnIndex="1" GridPane.rowIndex="11">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="cityRegister" maxWidth="220.0" prefHeight="30.0" promptText="City" GridPane.columnIndex="2" GridPane.rowIndex="11">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="streetRegister" maxWidth="456.0" prefHeight="30.0" promptText="Street" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="13">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="zipcodeRegister" maxWidth="456.0" prefHeight="30.0" promptText="Zip-code" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="15">
+               <styleClass>
+                  <String fx:value="blackText" />
+                  <String fx:value="textField" />
+               </styleClass>
+            </TextField>
+            <Button fx:id="registerButton" maxWidth="220.0" mnemonicParsing="false" onAction="#onRegisterAction" prefHeight="30.0" styleClass="violetButton" text="Register" GridPane.columnIndex="2" GridPane.rowIndex="17">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+   <styleClass>
+      <String fx:value="whiteBackground" />
+      <String fx:value="setFont" />
+      <String fx:value="blackText" />
+      <String fx:value="normalText" />
+   </styleClass>
+</Pane>

@@ -1,0 +1,98 @@
+@font-face {
+    src: url('font/Roboto-Regular.ttf');
+    font-family: "RobotoRegular";
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('font/Roboto-Medium.ttf');
+    font-family: "RobotoMedium";
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('font/Roboto-Light.ttf');
+    font-family: "RobotoLight";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.setFont{
+    -fx-font-family: "RobotoRegular";
+}
+
+.textField{
+    -fx-background-color:  linear-gradient(to left bottom, #f9f9f9, #f6f6f6);
+    -fx-text-fill: #1e1e1e;
+}
+
+.violetButton{
+    -fx-background-color:  linear-gradient(to left bottom, #c235c0, #d23084);
+    -fx-text-fill: #f0f0f0;
+}
+
+.normalButton{
+    -fx-background-color:  linear-gradient(to left bottom, #f9f9f9, #f6f6f6);
+    -fx-text-fill: #1e1e1e;
+}
+
+.blackBackground{
+    -fx-background-color: linear-gradient(to right bottom, #303030, #1e1e1e);
+}
+
+.whiteBackground{
+    -fx-background-color: #f0f0f0;
+}
+
+.whiteText{
+    -fx-text-fill: #f0f0f0;
+}
+
+.errorText{
+    -fx-text-fill: #c1486a;
+}
+
+.boldText{
+    -fx-font-weight: bold;
+}
+
+.smallText{
+    -fx-font-size: 11;
+}
+
+.normalText{
+    -fx-font-size: 14;
+}
+
+.mediumText{
+    -fx-font-size: 16;
+}
+
+.bigText{
+    -fx-font-size: 18;
+}
+
+.blackText{
+    -fx-text-fill: #1e1e1e;
+}
+
+.imageHome{
+    -fx-border-style: solid;
+     -fx-border-color: linear-gradient(to left bottom, #f9f9f9, #f6f6f6);
+     -fx-border-width: 4px;
+     -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+     -fx-background-color:  linear-gradient(to left bottom, #f9f9f9, #f6f6f6);
+}
+
+.titleHome{
+    -fx-border-style: solid;
+     -fx-border-color: linear-gradient(to left bottom, #c235c0, #d23084);
+     -fx-border-width: 4px;
+     -fx-border-radius: 4px;
+     -fx-background-radius: 4px;
+     -fx-background-color:  linear-gradient(to left bottom, #c235c0, #d23084);
+     -fx-text-fill: #f0f0f0;
+}
